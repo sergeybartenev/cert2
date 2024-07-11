@@ -1,0 +1,16 @@
+    <br><br>
+    <article>
+      <span><img class="littlepic" src="{{job.companyLogo}}" alt="{{job.title}}"></span>
+      <span><b>{{job.title}}</b></span>
+      <p><b>{{job.id}}</b></p>
+        <p>company: {{job.companyName}} reference: {{job.reference}}:</p>
+        {{job.description}}
+      <span><a routerLinkActive="active" routerLink="/jobs/{{job.id}}">{{job.title}}</a></span>
+        <span (click)="toggleJobChecked(job.id, (job.checked === undefined) ? false : job.checked)">
+        <span class="icon-star" style="color: yellow" *ngIf="jobChecked"></span>
+        <span class="icon-star" *ngIf="!jobChecked"></span>
+      </span>
+    <article>
+
+  
+

@@ -1,0 +1,9 @@
+
+
+<div *ngIf="emptyList;then no_content else content"></div>
+<ng-template #no_content>No favorite selected</ng-template>
+<ng-template #content>
+    <article>
+        <app-favorites-list-item *ngFor="let job of jobs; let i = index" [index]="i" [job]="job"></app-favorites-list-item>
+    </article>
+</ng-template>

@@ -1,0 +1,15 @@
+.navbar {
+    background-color:grey;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#menu li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}

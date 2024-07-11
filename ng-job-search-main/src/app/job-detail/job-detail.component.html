@@ -1,0 +1,13 @@
+<br><br>
+<article *ngIf="(job$ | async) as job">
+    <article><app-back-button></app-back-button></article>
+    <img class="littlepic" src="{{job.companyLogo}}" alt="{{job.title}}">
+    <article>
+      <h1>title: {{job.title}}</h1>
+      <h2>Publish date: <span>{{job.publishDate}}</span></h2>
+      <p>Location: {{job.location}}</p>
+      <p>Reference: <span>{{job.reference}}</span></p>
+    </article>
+  </article>
+
+
